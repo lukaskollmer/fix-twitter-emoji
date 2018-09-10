@@ -1,4 +1,4 @@
-# fix-twitter-emoji [![](https://img.shields.io/chrome-web-store/v/eneldhplcabcpgccboomkcajlknmfpaj.svg)](https://chrome.google.com/webstore/detail/fix-twitter-emoji/eneldhplcabcpgccboomkcajlknmfpaj)
+# fix-twitter-emoji
 
 > replace twitter's shitty emoji w/ apple's nicer ones
 

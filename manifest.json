@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "fix-twitter-emoji",
+  "description": "replace twitter's shitty emoji w/ apple's nicer ones",
+  "version": "1.0",
+  "content_scripts": [{
+    "matches": ["https://mobile.twitter.com/*"],
+    "run_at": "document_start",
+    "js": ["main.js"]
+  }]
+}

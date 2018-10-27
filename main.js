@@ -1,6 +1,11 @@
 const EMOJI_REGEX = /background-image: url\("https:\/\/abs-0\.twimg\.com\/emoji\/v2\/svg\/([a-f0-9\-]+)\.svg"\);/g
 
 const handleEmojiNode = (node, codepoints) => {
+  if (node.parentNode.parentNode.classList[0].includes('Draft')) {
+    // We don't replace emoji in the compose dialog
+    return;
+  }
+
   codepoints = codepoints.split('-').map(c => Number.parseInt(c, 16))
   if (codepoints.length === 1) {
     codepoints.push(0xfe0f)
